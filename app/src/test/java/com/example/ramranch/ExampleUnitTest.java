@@ -1,4 +1,4 @@
-package com.example.theexodiaapp;
+package com.example.ramranch;
 
 import org.junit.Test;
 

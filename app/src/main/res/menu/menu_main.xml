@@ -1,10 +1,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.theexodiaapp.MainActivity">
-    <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+    tools:context="com.example.ramranch.MainActivity">
+    <item android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:id="@+id/home"/>
+    <item android:title="Profile"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:id="@+id/profile"/>
+    <item android:title="Leaderboard"
+        android:icon="@drawable/ic_baseline_leaderboard_24"
+        android:id="@+id/leaderboard"/>
 </menu>
