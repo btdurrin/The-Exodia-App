@@ -59,6 +59,11 @@ public class LoginFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+//        eName = findViewById(R.id.etName);
+//        ePassword = findViewById(R.id.etPassword);
+
+
+
         return inflater.inflate(R.layout.fragment_login, container, false);
     }
 }

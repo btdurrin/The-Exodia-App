@@ -28,6 +28,12 @@ public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration appBarConfiguration;
     ActivityMainBinding binding;
 
+    class Credentials
+    {
+        String name = "admin";
+        String password = "12345";
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
