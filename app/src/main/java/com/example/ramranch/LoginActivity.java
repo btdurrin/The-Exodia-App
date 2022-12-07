@@ -4,17 +4,28 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.sql.Array;
+import java.util.ArrayList;
+import java.util.HashMap;
+
 public class LoginActivity extends AppCompatActivity {
 
     class Credentials
     {
-        String name = "alex";
-        String password = "12345";
+        String name;
+        String password;
+
+        public Credentials(String name, String password){
+            this.name = name;
+            this.password = password;
+        }
+
     }
 
     EditText usernameInput;
@@ -32,16 +43,25 @@ public class LoginActivity extends AppCompatActivity {
                 usernameInput = (EditText) findViewById(R.id.LoginUsername);
                 passwordInput = (EditText) findViewById(R.id.LoginPassword);
 
-                Credentials credentials = new Credentials();
+                Credentials alex = new Credentials("alex","12345");
+                Credentials kyle = new Credentials("kyle", "12345");
+
+                ArrayList<Credentials> loginInfo = new ArrayList<>();
+                loginInfo.add(alex);
+                loginInfo.add(kyle);
+
                 String username = usernameInput.getText().toString();
                 String password = passwordInput.getText().toString();
 
                 System.out.println(username);
                 System.out.println(password);
 
-                if (username.equals(credentials.name)  && password.equals(credentials.password)){
-                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                for(Credentials i: loginInfo){
+                    if (username.equals(i.name)  && password.equals(i.password)){
+                        startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                    }
                 }
+
 
 
             }
