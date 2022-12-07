@@ -19,78 +19,109 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginStart="230dp"
-            android:layout_marginEnd="170dp"
-            android:layout_marginBottom="600dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginBottom="21dp"
             android:text="Exodia"
             android:textSize="75dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/progressBar"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.598"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/Health"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
             android:text="Health:"
             android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Home" />
+            app:layout_constraintTop_toTopOf="@+id/progressBar" />
 
         <Button
             android:id="@+id/workoutButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="350dp"
+            android:layout_marginBottom="43dp"
             android:backgroundTint="@color/black"
             android:fallbackLineSpacing="false"
             android:text="Start Workout"
+            app:layout_constraintBottom_toTopOf="@+id/StepsTaken"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Health" />
+            app:layout_constraintTop_toBottomOf="@+id/battleButton" />
 
         <Button
             android:id="@+id/battleButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="32dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginBottom="43dp"
             android:backgroundTint="@color/black"
             android:fallbackLineSpacing="false"
             android:text="Battle"
             app:layout_constraintBottom_toTopOf="@+id/workoutButton"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="@+id/workoutButton"
+            app:layout_constraintTop_toBottomOf="@+id/DamageWaiting" />
 
         <TextView
             android:id="@+id/workoutTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginStart="53dp"
+            android:layout_marginBottom="66dp"
             android:text="Workout Time:"
-            app:layout_constraintStart_toStartOf="@+id/StepsTaken"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/StepsTaken" />
 
         <TextView
             android:id="@+id/StepsTaken"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginStart="53dp"
+            android:layout_marginBottom="45dp"
             android:text="Steps Taken:"
-            app:layout_constraintStart_toStartOf="@+id/DamageWaiting"
+            app:layout_constraintBottom_toTopOf="@+id/workoutTime"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/workoutButton" />
 
         <TextView
             android:id="@+id/DamageWaiting"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="175dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="28dp"
             android:text="Damage:"
-            app:layout_constraintBottom_toTopOf="@+id/StepsTaken"
-            app:layout_constraintEnd_toStartOf="@+id/battleButton"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintBottom_toTopOf="@+id/battleButton"
+            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="106dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="53dp"
+            android:max="100"
+            android:progress="60"
+            app:layout_constraintBottom_toTopOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/Health"
+            app:layout_constraintTop_toBottomOf="@+id/Home" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="195dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="11dp"
+            android:src="@drawable/exodia"
+            app:layout_constraintBottom_toTopOf="@+id/DamageWaiting"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
