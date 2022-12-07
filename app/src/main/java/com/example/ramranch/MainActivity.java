@@ -23,6 +23,8 @@ import com.example.ramranch.databinding.ActivityMainBinding;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.CompoundButton;
+import android.widget.Switch;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -35,12 +37,6 @@ public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;
 
 
-    class Credentials
-    {
-        String name = "admin";
-        String password = "12345";
-    }
-
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,8 +46,6 @@ public class MainActivity extends AppCompatActivity {
         replaceFragment(new HomeFragment());
 
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
-
-
 
             switch (item.getItemId()){
                 case R.id.home:
