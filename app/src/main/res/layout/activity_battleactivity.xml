@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/geometry"
     tools:context=".Battleactivity">
 
 
@@ -15,17 +16,20 @@
         android:text="00 : 00 : 00"
         android:textColor="@color/black"
         android:textSize="60sp"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="81dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
         tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/grey"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="2dp"
-        tools:ignore="MissingConstraints">
+        tools:layout_editor_absoluteY="2dp">
 
         <Button
             android:id="@+id/stopsButton"
@@ -33,7 +37,7 @@
             android:layout_height="wrap_content"
             android:background="@null"
             android:onClick="resetTapped"
-            android:text="STOP"
+            android:text="BACK"
             android:textColor="@color/red"
             android:textSize="30sp" />
 
@@ -58,7 +62,6 @@
             android:text="START"
             android:textColor="@color/green"
             android:textSize="30sp" />
-
 
 
     </androidx.appcompat.widget.Toolbar>

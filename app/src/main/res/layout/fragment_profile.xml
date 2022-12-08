@@ -27,17 +27,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_marginTop="32dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.467"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Profile"
-            tools:src="@tools:sample/avatars" />
-
         <TextView
             android:id="@+id/userID"
             android:layout_width="wrap_content"
@@ -73,7 +62,6 @@
             android:layout_marginTop="64dp"
             android:text="Total Steps Taken:"
             android:textSize="20dp"
-            app:layout_constraintEnd_toEndOf="@+id/imageView"
             app:layout_constraintStart_toEndOf="@+id/profileEmail"
             app:layout_constraintTop_toBottomOf="@+id/profileEmail" />
 
@@ -86,6 +74,68 @@
             android:textSize="20dp"
             app:layout_constraintStart_toStartOf="@+id/totSteps"
             app:layout_constraintTop_toBottomOf="@+id/totSteps" />
+
+
+        <TextView
+            android:id="@+id/totSteps2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:text="No value"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/totSteps"
+            app:layout_constraintStart_toEndOf="@+id/totSteps"
+            app:layout_constraintTop_toTopOf="@+id/totSteps" />
+
+        <TextView
+            android:id="@+id/totSteps3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:text="No value"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/totWorkout"
+            app:layout_constraintStart_toEndOf="@+id/totWorkout"
+            app:layout_constraintTop_toTopOf="@+id/totWorkout" />
+
+        <TextView
+            android:id="@+id/profileEmail2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="32dp"
+            android:text="acperez@syr.edu"
+            app:layout_constraintStart_toStartOf="@+id/profileUsername"
+            app:layout_constraintTop_toBottomOf="@+id/profileUsername" />
+
+        <TextView
+            android:id="@+id/profileUsername2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="32dp"
+            android:text="alex"
+            app:layout_constraintStart_toStartOf="@+id/userID"
+            app:layout_constraintTop_toBottomOf="@+id/userID" />
+
+        <TextView
+            android:id="@+id/userID2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="alex#9234"
+            app:layout_constraintStart_toEndOf="@+id/userID"
+            app:layout_constraintTop_toTopOf="@+id/userID" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/character_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Profile" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

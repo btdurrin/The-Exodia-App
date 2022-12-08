@@ -49,6 +49,7 @@
             android:backgroundTint="@color/black"
             android:fallbackLineSpacing="false"
             android:text="Battle"
+            android:onClick="battleTapped"
             app:layout_constraintBottom_toTopOf="@+id/switch1"
             app:layout_constraintStart_toStartOf="@+id/switch1"
             app:layout_constraintTop_toBottomOf="@+id/DamageWaiting" />
@@ -129,6 +130,25 @@
             android:text="73"
             app:layout_constraintStart_toEndOf="@+id/DamageWaiting"
             app:layout_constraintTop_toTopOf="@+id/DamageWaiting" />
+
+
+        <TextView
+            android:id="@+id/HomeWTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="No value"
+            app:layout_constraintStart_toEndOf="@+id/workoutTime"
+            app:layout_constraintTop_toTopOf="@+id/workoutTime" />
+
+        <TextView
+            android:id="@+id/HomeStep"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_marginTop="20dp"
+            android:text="No value"
+            app:layout_constraintStart_toStartOf="@+id/HomeWTime"
+            app:layout_constraintTop_toBottomOf="@+id/workoutTime" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

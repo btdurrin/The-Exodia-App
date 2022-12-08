@@ -2,6 +2,7 @@ package com.example.ramranch;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.icu.text.Replaceable;
 import android.os.Bundle;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        replaceFragment(new HomeFragment());
 
 
         Switch workSwitch = findViewById(R.id.switch1);
@@ -86,6 +88,14 @@ public class MainActivity extends AppCompatActivity {
 
         public void WorkoutTimer (View view){
             startActivity(new Intent(MainActivity.this, Battleactivity.class));
+
+    }
+
+    public void battleTapped(View view)
+    {
+
+        startActivity(new Intent(MainActivity.this, FieldActivity.class));
+
 
     }
 }
