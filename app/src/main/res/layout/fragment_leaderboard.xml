@@ -14,12 +14,15 @@
 
     <TableRow
         android:id="@+id/tableRow11"
-        android:layout_width="392dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
         android:background="#DAE8FC"
         android:padding="5dp"
-        tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="499dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow10">
 
         <TextView
             android:layout_width="wrap_content"
@@ -42,12 +45,16 @@
 
     <TableRow
         android:id="@+id/tableRow3"
-        android:layout_width="391dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="9dp"
         android:background="#DAE8FC"
         android:padding="5dp"
-        tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="262dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow2">
 
         <TextView
             android:layout_width="wrap_content"
@@ -70,12 +77,15 @@
 
     <TableRow
         android:id="@+id/tableRow2"
-        android:layout_width="391dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
         android:background="#DAE8FC"
         android:padding="5dp"
-        tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="232dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow">
 
         <TextView
             android:layout_width="wrap_content"
@@ -98,12 +108,15 @@
 
     <TableRow
         android:id="@+id/tableRow10"
-        android:layout_width="392dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
         android:background="#DAE8FC"
         android:padding="5dp"
-        tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="470dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow9">
 
         <TextView
             android:layout_width="wrap_content"
@@ -126,12 +139,16 @@
 
     <TableRow
         android:id="@+id/tableRow"
-        android:layout_width="391dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="203dp"
+        android:layout_marginEnd="9dp"
         android:background="#0079D6"
         android:padding="5dp"
-        tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="203dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:layout_width="wrap_content"
@@ -154,12 +171,16 @@
 
     <TableRow
         android:id="@+id/tableRow4"
-        android:layout_width="391dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="9dp"
         android:background="#DAE8FC"
         android:padding="5dp"
-        tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="292dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow3">
 
         <TextView
             android:layout_width="wrap_content"
@@ -182,12 +203,15 @@
 
     <TableRow
         android:id="@+id/tableRow7"
-        android:layout_width="391dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
         android:background="#DAE8FC"
         android:padding="5dp"
-        tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="381dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow6">
 
         <TextView
             android:layout_width="wrap_content"
@@ -210,12 +234,15 @@
 
     <TableRow
         android:id="@+id/tableRow8"
-        android:layout_width="391dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
         android:background="#DAE8FC"
         android:padding="5dp"
-        tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="410dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow7">
 
         <TextView
             android:layout_width="wrap_content"
@@ -238,12 +265,15 @@
 
     <TableRow
         android:id="@+id/tableRow5"
-        android:layout_width="391dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
         android:background="#DAE8FC"
         android:padding="5dp"
-        tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="321dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow4">
 
         <TextView
             android:layout_width="wrap_content"
@@ -266,12 +296,16 @@
 
     <TableRow
         android:id="@+id/tableRow9"
-        android:layout_width="392dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="9dp"
         android:background="#DAE8FC"
         android:padding="5dp"
-        tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="441dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow8">
 
         <TextView
             android:layout_width="wrap_content"
@@ -294,12 +328,16 @@
 
     <TableRow
         android:id="@+id/tableRow6"
-        android:layout_width="391dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="9dp"
         android:background="#DAE8FC"
         android:padding="5dp"
-        tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="352dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow5">
 
         <TextView
             android:layout_width="wrap_content"
@@ -324,9 +362,11 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
         android:text="LEADERBOARD"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="89dp"
-        tools:layout_editor_absoluteY="117dp" />
+        app:layout_constraintBottom_toTopOf="@+id/tableRow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
