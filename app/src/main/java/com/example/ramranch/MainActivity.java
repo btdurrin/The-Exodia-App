@@ -43,40 +43,49 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        replaceFragment(new HomeFragment());
 
-        binding.bottomNavigationView.setOnItemSelectedListener(item -> {
 
-            int min = 50;
-            int max = 100;
-            int random_int = (int)Math.floor(Math.random()*(max-min+1)+min);
+        Switch workSwitch = findViewById(R.id.switch1);
 
-            damage_text = findViewById(R.id.damage_text);
-            damage_text.setText(String.valueOf(random_int));
 
-            switch (item.getItemId()){
-                case R.id.home:
-                    replaceFragment(new HomeFragment());
-                    break;
-                case R.id.profile:
-                    replaceFragment(new ProfileFragment());
-                    break;
-                case R.id.leaderboard:
-                    replaceFragment(new LeaderboardFragment());
-                    break;
-                case R.id.settings:
-                    replaceFragment(new SettingsFragment());
-                    break;
-            }
 
-            return true;
-        });
-    }
-    private void replaceFragment(Fragment fragment){
+            binding.bottomNavigationView.setOnItemSelectedListener(item -> {
 
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.frame_layout, fragment);
-        fragmentTransaction.commit();
+                int min = 50;
+                int max = 100;
+                int random_int = (int) Math.floor(Math.random() * (max - min + 1) + min);
+
+                damage_text = findViewById(R.id.damage_text);
+                damage_text.setText(String.valueOf(random_int));
+
+                switch (item.getItemId()) {
+                    case R.id.home:
+                        replaceFragment(new HomeFragment());
+                        break;
+                    case R.id.profile:
+                        replaceFragment(new ProfileFragment());
+                        break;
+                    case R.id.leaderboard:
+                        replaceFragment(new LeaderboardFragment());
+                        break;
+                    case R.id.settings:
+                        replaceFragment(new SettingsFragment());
+                        break;
+                }
+
+                return true;
+            });
+        }
+        private void replaceFragment (Fragment fragment){
+
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.frame_layout, fragment);
+            fragmentTransaction.commit();
+        }
+
+        public void WorkoutTimer (View view){
+            startActivity(new Intent(MainActivity.this, Battleactivity.class));
+
     }
 }

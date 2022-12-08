@@ -11,7 +11,7 @@
         android:id="@+id/Login"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/purple_500"
+        android:background="@drawable/geometry"
         tools:context=".MainActivity">
 
         <TextView
@@ -86,17 +86,6 @@
             android:textSize="20dp"
             app:layout_constraintStart_toStartOf="@+id/totSteps"
             app:layout_constraintTop_toBottomOf="@+id/totSteps" />
-
-        <Button
-            android:id="@+id/settingsButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="32dp"
-            android:backgroundTint="#000000"
-            android:text="Settings"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/Profile"
-            app:layout_constraintStart_toStartOf="@+id/Profile" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
