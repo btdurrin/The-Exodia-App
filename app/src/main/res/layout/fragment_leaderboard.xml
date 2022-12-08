@@ -1,208 +1,266 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
+
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_200"
-    tools:context=".LeaderboardFragment">
+    android:layout_marginTop="10dp"
+    android:background="@color/purple_500"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/Login"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/purple_500"
-        tools:context=".MainActivity">
+    <TableRow
+        android:background="#0079D6"
+        android:padding="5dp">
 
         <TextView
-            android:id="@+id/leaderboard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="32dp"
-            android:text="Leaderboard"
-            android:textSize="50dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_weight="1"
+            android:text="Rank" />
 
         <TextView
-            android:id="@+id/leaderboardBg"
-            android:layout_width="338dp"
-            android:layout_height="523dp"
-            android:layout_marginBottom="100dp"
-            android:background="@color/black"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <TextView
-            android:id="@+id/header"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="Rank:          Username:         Total Damage:"
-            android:textColor="#FFFFFF"
-            android:textSize="18dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/leaderboard" />
+            android:layout_weight="1"
+            android:text="User Name" />
 
         <TextView
-            android:id="@+id/place1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="1            Placeholder          Total Damage"
-            android:textColor="#FFFFFF"
-            android:textSize="18dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.506"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/header" />
+            android:layout_weight="1"
+            android:text="Total Damage" />
+    </TableRow>
+
+    <TableRow
+        android:background="#DAE8FC"
+        android:padding="5dp">
 
         <TextView
-            android:id="@+id/place2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="2            Placeholder          Total Damage"
-            android:textColor="#FFFFFF"
-            android:textSize="18dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.51"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/place1" />
+            android:layout_weight="1"
+            android:text="1" />
 
         <TextView
-            android:id="@+id/place3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="3            Placeholder          Total Damage"
-            android:textColor="#FFFFFF"
-            android:textSize="18dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.51"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/place2" />
+            android:layout_weight="1"
+            android:text="Ldybug02" />
 
         <TextView
-            android:id="@+id/place4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="4            Placeholder          Total Damage"
-            android:textColor="#FFFFFF"
-            android:textSize="18dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/place3" />
+            android:layout_weight="1"
+            android:text="500" />
+    </TableRow>
+
+    <TableRow
+        android:background="#DAE8FC"
+        android:padding="5dp">
 
         <TextView
-            android:id="@+id/place5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="5            Placeholder          Total Damage"
-            android:textColor="#FFFFFF"
-            android:textSize="18dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.51"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/place4" />
+            android:layout_weight="1"
+            android:text="2" />
 
         <TextView
-            android:id="@+id/place6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="6            Placeholder          Total Damage"
-            android:textColor="#FFFFFF"
-            android:textSize="18dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/place5" />
+            android:layout_weight="1"
+            android:text="Noodle01" />
 
         <TextView
-            android:id="@+id/place7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="7            Placeholder          Total Damage"
-            android:textColor="#FFFFFF"
-            android:textSize="18dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.51"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/place6" />
+            android:layout_weight="1"
+            android:text="493" />
+    </TableRow>
+
+    <TableRow
+        android:background="#DAE8FC"
+        android:padding="5dp">
 
         <TextView
-            android:id="@+id/place8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="8            Placeholder          Total Damage"
-            android:textColor="#FFFFFF"
-            android:textSize="18dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.51"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/place7" />
+            android:layout_weight="1"
+            android:text="3" />
 
         <TextView
-            android:id="@+id/place9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="9            Placeholder          Total Damage"
-            android:textColor="#FFFFFF"
-            android:textSize="18dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.51"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/place8" />
+            android:layout_weight="1"
+            android:text="BlueGlow" />
 
         <TextView
-            android:id="@+id/place10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="10            Placeholder          Total Damage"
-            android:textColor="#FFFFFF"
-            android:textSize="18dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.552"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/place9" />
+            android:layout_weight="1"
+            android:text="405" />
+    </TableRow>
+
+    <TableRow
+        android:background="#DAE8FC"
+        android:padding="5dp">
 
         <TextView
-            android:id="@+id/MyPlace"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="88dp"
-            android:text="My Rank          Username         Total Damage"
-            android:textColor="#FFFFFF"
-            android:textSize="18dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.494"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/place9" />
+            android:layout_weight="1"
+            android:text="4" />
 
         <TextView
-            android:id="@+id/placeBorder"
-            android:layout_width="350dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:background="#FFFFFF"
-            android:textColor="#FFFFFF"
-            android:textSize="18dp"
-            app:layout_constraintBottom_toTopOf="@+id/MyPlace"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.508"
-            app:layout_constraintStart_toStartOf="parent" />
+            android:layout_weight="1"
+            android:text="MoonPaws" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="369" />
+    </TableRow>
 
-</FrameLayout>
+    <TableRow
+        android:background="#DAE8FC"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Snorkle8" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="349" />
+    </TableRow>
+
+    <TableRow
+        android:background="#DAE8FC"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PixelArt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="250" />
+    </TableRow>
+
+    <TableRow
+        android:background="#DAE8FC"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Strawberry" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="231" />
+    </TableRow>
+
+    <TableRow
+        android:background="#DAE8FC"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="8" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="FrogJump" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="197" />
+    </TableRow>
+
+    <TableRow
+        android:background="#DAE8FC"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="9" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="LemonLime" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="111" />
+    </TableRow>
+
+    <TableRow
+        android:background="#DAE8FC"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nightowl6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1" />
+    </TableRow>
+
+</TableLayout>
