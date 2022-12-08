@@ -78,6 +78,7 @@
             android:id="@+id/DamageWaiting"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
             android:layout_marginBottom="71dp"
             android:text="Damage:"
             app:layout_constraintBottom_toTopOf="@+id/battleButton"
@@ -128,6 +129,22 @@
             android:text="73"
             app:layout_constraintStart_toEndOf="@+id/DamageWaiting"
             app:layout_constraintTop_toTopOf="@+id/DamageWaiting" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="47 mins"
+            tools:layout_editor_absoluteX="236dp"
+            tools:layout_editor_absoluteY="597dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3,740"
+            tools:layout_editor_absoluteX="228dp"
+            tools:layout_editor_absoluteY="638dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
