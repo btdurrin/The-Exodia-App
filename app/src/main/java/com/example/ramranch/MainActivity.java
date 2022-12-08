@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     ActivityMainBinding binding;
-
+    TextView damage_text;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -46,6 +46,13 @@ public class MainActivity extends AppCompatActivity {
         replaceFragment(new HomeFragment());
 
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
+
+            int min = 50;
+            int max = 100;
+            int random_int = (int)Math.floor(Math.random()*(max-min+1)+min);
+
+            damage_text = findViewById(R.id.damage_text);
+            damage_text.setText(String.valueOf(random_int));
 
             switch (item.getItemId()){
                 case R.id.home:
