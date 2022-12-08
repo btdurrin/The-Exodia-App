@@ -1,64 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tableLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="10dp"
-    android:background="@color/purple_500"
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp">
+    android:layout_gravity="center"
+    android:layout_marginTop="0dp"
+    android:background="@color/purple_500">
+
 
     <TableRow
-        android:background="#0079D6"
-        android:padding="5dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Rank" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="User Name" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Total Damage" />
-    </TableRow>
-
-    <TableRow
+        android:id="@+id/tableRow11"
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
         android:background="#DAE8FC"
-        android:padding="5dp">
+        android:padding="5dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="499dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nightowl6" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="1" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Ldybug02" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="500" />
     </TableRow>
 
     <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
         android:background="#DAE8FC"
-        android:padding="5dp">
+        android:padding="5dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="262dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -80,146 +69,41 @@
     </TableRow>
 
     <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
         android:background="#DAE8FC"
-        android:padding="5dp">
+        android:padding="5dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="232dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="3" />
+            android:text="1" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="BlueGlow" />
+            android:text="Ldybug02" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="405" />
+            android:text="500" />
     </TableRow>
 
     <TableRow
+        android:id="@+id/tableRow10"
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
         android:background="#DAE8FC"
-        android:padding="5dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="4" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="MoonPaws" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="369" />
-    </TableRow>
-
-    <TableRow
-        android:background="#DAE8FC"
-        android:padding="5dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="5" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Snorkle8" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="349" />
-    </TableRow>
-
-    <TableRow
-        android:background="#DAE8FC"
-        android:padding="5dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="6" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="PixelArt" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="250" />
-    </TableRow>
-
-    <TableRow
-        android:background="#DAE8FC"
-        android:padding="5dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="7" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Strawberry" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="231" />
-    </TableRow>
-
-    <TableRow
-        android:background="#DAE8FC"
-        android:padding="5dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="8" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="FrogJump" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="197" />
-    </TableRow>
-
-    <TableRow
-        android:background="#DAE8FC"
-        android:padding="5dp">
+        android:padding="5dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="470dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -241,26 +125,208 @@
     </TableRow>
 
     <TableRow
-        android:background="#DAE8FC"
-        android:padding="5dp">
+        android:id="@+id/tableRow"
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:background="#0079D6"
+        android:padding="5dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="203dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="10" />
+            android:text="Rank" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Nightowl6" />
+            android:text="User Name" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="1" />
+            android:text="Total Damage" />
     </TableRow>
 
-</TableLayout>
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:background="#DAE8FC"
+        android:padding="5dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="292dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="BlueGlow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="405" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:background="#DAE8FC"
+        android:padding="5dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="381dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PixelArt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="250" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow8"
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:background="#DAE8FC"
+        android:padding="5dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="410dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Strawberry" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="231" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:background="#DAE8FC"
+        android:padding="5dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="321dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MoonPaws" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="369" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow9"
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+        android:background="#DAE8FC"
+        android:padding="5dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="441dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="8" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="FrogJump" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="197" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:background="#DAE8FC"
+        android:padding="5dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="352dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Snorkle8" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="349" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LEADERBOARD"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="117dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
